@@ -34,7 +34,8 @@
 #include "mcp2515_defs.h"
 #include "esp32_can.h"
 
-SPISettings mcpSPISettings(8000000, MSBFIRST, SPI_MODE0);
+SPISettings mcpSPISettings(16000000, MSBFIRST, SPI_MODE0);
+//SPISettings mcpSPISettings(8000000, MSBFIRST, SPI_MODE0);
 
 static TaskHandle_t intDelegateTask = NULL;
 
